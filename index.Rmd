@@ -1,0 +1,195 @@
+---
+title: "Can infants learn phonology in the lab? A meta-analytic answer"
+subtitle: "Alejandrina Crista  (2017)"
+author: "Jennifer Markovits"
+date: "2019/03/30 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["fc", "ninjutsu", "robot"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+ratio: 16:9
+---
+
+# Summary 
+
+
+-  The goal  of the present work is to inform about the overall empirical value of artificial phonology for the understanding of putative language learning mechanisms in infancy  covering distributional learning.
+
+- To address this goal the author apply meta-analytic tools to the body of infant artificial phonology studies in order to describe  the analysis in three ways:
+1. weighted mean effect size
+2. if certain factors are moderator (third variable that affect the strenght between the dependent and the independent variable) of overall effect size.
+3. selective reporting in the literature via inspection of funnel plots
+
+---
+
+#Two theoretical proposals of infant language-learning at phonology level
+
+
+.pull-left[ K.E Chambers et al. (2003): phonotactic learning 
+- Infants can track the frequency with wich sounds occurr in a given syllabic position.
+- Participants heard CVC syllables (set 1: /b, k, n,
+f/; set 2: /p, g, m, s/) 
+- /bæp/: familiarization 
+- /bIp/:(legal) 
+- /pæb/ :(illegal)  ]
+
+.pull-right[ Maye et al. (2002): distributional learning 
+- Infants track the distribution of acoustic cues in the input as modes or peaks along an acoustic dimension.
+- Participants listen a nonnative speech sound distributions, a continuum [da] and [ta], to test  whether infants revealed phonetic learning.
+]
+
+
+---
+
+# Methdology employed 
+
+Meta-analytic approach
+
+
+## 2.1 Paper identification 
+- the paper pool was composed by a list of papers known to the author with systematic searches on pubmed and google.scholar
+
+
+##2.2 Paper selection
+
+.pull-left[near conceptual replications of the seminal study by K.E. Chambers et al.(2003)]
+.pull-right[near- replications of the seminal study by Maye et al. (2002)]
+
+-
+###Criteria
+- participants: 0 and 36 months
+- exposure and tested in a lab
+- exposure to word-like item followed by new word-like item that follow or violate that restriction
+
+---
+## 2.3 Data entry
+
+ Each study was coded in terms of:
+- backgroung information of the paper
+- average age of the infants
+- number of infants
+- type of test trial contrasted (e.g comparing to illegal versus familiar trial; or comparing  illegal versus legal)
+- mean and sd of looking times for each trial
+- the correlation in individuals looking times across the two trial types within each experiment
+
+## 2.4 Effect size calculation
+- using the coded information, an effect size, the SD of the effect size, and a weighting factor were calculate for each experiment. For the present meta-analysis, the dependent measure was looking time to two type of trials (familiar versus legal; legal versus ilegal)
+---
+# 3. Analyses
+- All analyses have been carried out with R. The author used the metafor package (Viechtbauer, 2010). Three questions were addressed:
+1. The main effects
+2. the importance of certain moderators
+3. Presence of bias 
+
+##Meta-analytic tools
+1. A random meta- analytic regression: the overall strenght of the effects of laboratory phonological learning
+2. A second random meta-analytic regression: to analyze variance in results 
+3. Analyze the distribution of p-values
+
+# Results
+
+- the overall effect size was very close to zero
+- proposed moderators did not significantly account for variance
+- there was weak evidence of bias in the literature
+
+---
+
+# Conclusion
+
+- The author found no systematic evidence that infant s phonotactic learning can be experimentally induced in the laboratory.
+- This results may indicate that the field has not yet found a way to reproduce learning of sound patterns in a controlled setting.
+
+- Future research in phonotactic and distributional sound learning in infancy should study under what experimental conditions robust and replicable effects can be obtained.
+
+  
+---
+
+# What is publicly available
+- input data (excel)
+
+![](libs/img/img4.jpg)
+
+---
+- PRISMA (Prefered Reporting Items for Systematic Reviews and Meta-Analyses)
+![](libs/img/img5.png)   
+---
+- AGL_sounds
+
+![](libs/img/img6.png)  
+
+---
+- Code?
+
+  
+  - Yes, Analyses  - [link](https://osf.io/bcjhs/)
+  
+- Reproducible document?
+
+--
+    - Yes, if you know a lot of statistic you can do it
+    
+![](libs/img/img3.png)   
+
+  
+---
+
+# 
+# Are you able to reproduce the statistical analyses? Are your results the same as the results in the manuscript?
+- There are explanations in the code as to what to do, however it requires more statitic knowledge
+
+Example: 
+
+--
+![](libs/img/img9.png)
+
+---
+
+# Is the software used to analyze the data open source?
+
+- Yes, they used R
+
+---
+
+# Can you run the code without errors?
+
+- No
+
+--
+
+# Are you able to reproduce the plots and tables?
+
+- No. I downloaded metafor package, 
+
+
+# What other materials are available? 
+
+- Preprint on-line  - [link](https://osf.io/jffa5/)
+
+
+--
+
+---
+
+# Using a scale from 1 to 10, give the article an open science score. 
+
+- 7
+
+---
+# Justify your evaluation
+
+- The material on line gives you a general idea how to undertake a meta-analyses
+
+- Data is available and code used is available, but if you are a novice R user, it is difficult withouth further explanation
+
+- some of the data seems to be there without any justifications and some data is missing
+![](libs/img/img8.png)
+
+-
+
+---
+
+# Thank you!
